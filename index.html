@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buono Pinturas Salsipuedes</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="./.vscode/dist/style.css" rel="stylesheet">
+    <script type="text/javascript" src="base.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  </head>
+<body onload="CallTime();">
+    <a href="https://api.whatsapp.com/send?phone=543543564841&text=Hola%21%20Quisiera%20asesoramiento%20gracias%20." class="whatsappfloat" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <a href="http://es-la.facebook.com/PintureriaCasaBuono/" class="facebookfloat" target="_blank">
+    <i class="fa fa-facebook-f my-float"></i>
+    </a>
+    <a href="http://www.instagram.com/casa_buono" class="instafloat" target="_blank">
+    <i class="fa fa-instagram my-float"></i>
+    </a>
+    <header>
+        <div class="header-banner fixed-header visible-title">
+            <h1>
+                <img class="img-responsive slime-white-border" src="solologo.jpeg" alt="Casa Buono Logo">
+            Casa Buono</h1>
+            
+            <nav>
+                <a class="sombra" href="#pinturas">Pinturas</a>
+                <a class="sombra" href="#construccion">Construcción en Seco</a>
+                <a class="sombra" href="#contacto">Contacto</a>
+            </nav>
+            
+        </div>
+    </header>    
+    <section id="pinturas" class="content pinturas">
+        <article>
+        <div class="cuadrado">
+            <h3>¿Vas a Pintar?</h3>
+            <p><img src="https://www.tersuave.com.ar/assets/frontend/dist/images/banner_colores_2.gif" alt="Elegí Diferente"></p>
+            <!--<form name="form1" action="mailto:casabuono@gmail.com" method="GET">
+                <label style="font-weight: bold;"><input type="radio" name="exterior-interior"> Exterior</label>
+                <label style="font-weight: bold;"><input type="radio" name="exterior-interior"> Interior</label>
+                <label><input type="radio" name="personality"> Divertido</label>
+                <label><input type="radio" name="personality"> Trabajo</label>
+                <label><input type="radio" name="personality"> Chicos</label>
+                <label><input type="radio" name="personality"> Cocina</label>
+                <label><input type="radio" name="personality"> Taller</label>
+                <input type="text" placeholder="Teléfono sin espacio ni barras" required name="text1">
+                <button type="submit" onclick="phonenumber(document.form1.text1)">Enviar</button>
+              </form>-->
+              <div class="dropdown">
+                <button class="dropbtn">Interior</button>
+                <div class="dropdown-content">
+                  <a onclick="buscador(1)">Pared</a>
+                  <a onclick="buscador(2)">Piso</a>
+                  <a onclick="buscador(3)">Maderas</a>
+                  <a href="#">Pizarrón</a>
+                  <a href="#">Cielorrasos</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Exterior</button>
+                <div class="dropdown-content">
+                  <a href="#">Pared</a>
+                  <a href="#">Piso</a>
+                  <a href="#">Maderas</a>
+                  <a href="#">Techos</a>
+                </div>
+              </div>
+              <p id="demo"></p>
+            </br>
+          </br>
+              <a href="#"><img src="https://www.tersuave.com.ar/assets/frontend/dist/images/tersuave.svg" alt="Tersuave Logo"></a>
+              <h3>_</h3>
+            </div>
+      </article>
+    </section> 
+
+    
+    <section id="construccion" class="content construccion">
+        <article>
+            <div class="cuadrado">
+                <h3>Todo en construcción en seco</h3>
+                <img id="image" src="GIF/0.jpeg" alt="GIF construcción en seco" width="400" height="300">
+                <br>
+                <!--<button type="button" class="btn btn-warning popup" onclick="myFunction()"><span class="popuptext" id="myPopup">Placas OSB de 8mm; 9,5mm; 11,1mm; 15,1mm; 18,3mm</span>Placas</button>-->
+                <div class="popup btn btn-warning" onclick="myFunction()">Placas
+                  <span class="popuptext" id="myPopup"> <ul> Placas OSB <li> 8mm </li> <li> 9,5mm </li> <li> 11,1mm </li> <li> 15,1mm </li> <li> 18,3mm </li> </ul> <ul> Placas de yeso <li> 12mm </li> <li> 9,5mm </li> </ul> </span>
+                </div> 
+                <div class="popup btn btn-warning" onclick="myFunction2()">Perfilería
+                  <span class="popuptext" id="myPopup2"> <ul> Perfilería <li> Ángulo de ajuste </li> <li> Montante </li> <li> Solera </li> <li> Buña Perimetral </li> <li> Cubrecantos </li> <li> Omega </li> </ul></span>
+                </div> 
+                <div class="popup btn btn-warning" onclick="myFunction3()">Aislación
+                  <span class="popuptext" id="myPopup3"> <ul> Aislación <li> Lana de Roca </li> <li> Lana de Vidrio </li> <li> ADH Climaver </li> </ul></span>
+                </div> 
+                <div class="popup btn btn-warning" onclick="myFunction4()">Accesorios
+                  <span class="popuptext" id="myPopup4"> <ul> Masilla <li> 10lts </li> <li> 20lts </li> </ul> <ul> Tornillos <li> Tornillo de Placa </li> <li> Tornillo T1 y T2 Mecha </li> <li> Tornillo T1 y T2 Aguja </li> <li> Autoperforantes </li> <li> Tarugo </li> </ul> <ul> Cintas Cubrecantos <li> 8mm </li> <li> 20mm </li> </ul> </span>
+                </div> 
+              </br>
+            <h3>_</h3>
+            </div>
+        </article>
+    </section> 
+
+    <section id="contacto" class="content contacto">
+       <article>
+        <div class="row">
+            <div class="example-1 card">
+              <div class="wrapper">
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Av San Martin 555</span>
+                    <h2 class="title"><a href="https://goo.gl/maps/bhEgojuvMPVDoU3v9" target="_blank">Salsipuedes</a></h2>
+                    <p class="text">Lunes a Viernes de 9 a 13 y de 16 a 20</p>
+                    <p class="text">Sábados de 9 a 13</p>
+                    <p class="text">Consultas: 3543 564 841</p>
+                    <!--<label for="show-menu" class="menu-button"><span></span></label>-->
+                  </div>
+                  <input type="checkbox" id="show-menu" />
+                  </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Av San Martin 5580</span>
+                    <h2 class="title"><a href="https://goo.gl/maps/tuEqokeCb3zJbhVu9" target="_blank">Río Ceballos</a></h2>
+                    <p class="text">Lunes a Viernes de 9 a 13 y de 16 a 20</p>
+                    <p class="text">Sábados de 9 a 13</p>
+                    <p class="text">Consultas: 3543 564 841</p>
+                    <!--<label for="show-menu" class="menu-button"><span></span></label>-->
+                    </div>
+                  <input type="checkbox" id="show-menu" />
+                </div>
+              </div>
+            </div>
+        </div>
+        </article> 
+    </section>
+</body>
+</html>

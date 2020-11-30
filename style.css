@@ -1,0 +1,400 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* header */
+
+/*body { margin:0px; padding:0px; }*/
+
+header {
+    height: 100px;
+    z-index: 10;
+    position: fixed;
+}
+.header-banner {
+    background-color: #0089be;
+    background-image: url('https://pintureriasietecolores.com.ar/wp-content/uploads/2019/09/cropped-daniele-levis-pelusi-yTHEMn4a8Tw-unsplash-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+}
+
+header h1 {
+    background-color: #2b547e;
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 1rem; 
+    left: 4rem;
+    bottom: 1.5rem;
+    border-radius: 15px 15px 15px 15px;
+}
+
+header nav {
+    font-family: Lobster, Monospace;
+    padding: 0 1rem;
+    float: right;
+    position: relative;   
+    top: 1.5rem;
+    right: 1rem; 
+    left: 0.3rem;
+    bottom: 1.5rem;
+}
+
+header nav a {
+    color: #FFF;
+    margin-left: 15px;
+    font-size: 19px;
+}
+
+header nav a:hover {
+    color: #0089be;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+.slime-white-border {
+    max-width: 8%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+.sombra {
+    border-color: #2b547e;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #2b547e;
+    border-radius: 5%;
+    box-shadow: -3px 2px 30px 2px black;
+}
+
+/* body */
+
+h2, h1 {
+    font-family: Lobster, Monospace;
+    color: White;
+    text-align: center;
+  }
+
+h1 {
+    box-shadow: -3px 2px 30px 2px black;
+}
+
+h3, ul {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #2b547e;
+    text-align: center;
+  }
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+  }
+
+form {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/*.wrapper {
+    /*background: #ec1b2e;
+    background: -webkit-linear-gradient(to right, #ec1b2e, #f6ee07);
+    background: linear-gradient(to right, #ec1b2e, #f6ee07);
+    width: 100%;
+    height: 100%;
+    background-color: teal;
+  }*/
+
+.cuadrado {
+    width:25%;
+    height:0;
+    padding-top:2%;
+    position: relative;
+    background:white;
+    border-radius: 15px 15px 15px 15px;
+    background-size: contain;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+    margin-top: 5rem;
+    box-shadow: -5px 3px 50px 3px black;
+  }
+
+.content{ 
+    margin: 0 auto;
+    padding: 4rem 16rem;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+p img, img {
+    max-width: 80%;
+    background-color: #fff;
+    float: center;
+    align-self: center;
+    border-radius: 5px 5px 5px 5px;
+}
+a img {
+    max-width: 30%;
+    background-color: #fff;
+    align-self: right;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#image {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.pinturas {
+    background-image: linear-gradient(#0089be, #9198e5);
+    width: 100%;
+    height: 50rem;
+    margin: 0%;
+}
+
+.construccion {
+    background-image: linear-gradient(#9198e5, #0089be);
+    width: 100%;
+    height: 50rem;
+ }
+
+#contacto {
+  background-image: linear-gradient(#0089be, #9198e5);
+  width: 100%;
+  height: 50rem;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+section {
+    width: 100%;
+    height: 100vh;
+
+    display: table-cell;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10em;
+    vertical-align: middle; 
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+#btn {
+    padding-bottom: 5rem;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/*Social Media buttons*/
+
+.whatsappfloat{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.whatsappfloat:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.facebookfloat{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+    right:110px;
+	background-color:#3b5998;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.facebookfloat:hover {
+	text-decoration: none;
+	color: #8b9dc3;
+    background-color:#fff;
+}
+
+.instafloat{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+    right:180px;
+	background: rgb(251,221,119);
+    background: linear-gradient(45deg, rgba(251,221,119,1) 0%, rgba(196,102,156,1) 35%, rgba(45,123,179,1) 100%);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.instafloat:hover {
+	text-decoration: none;
+	color: black;
+    background:#fff;
+}
+
+/* pop up */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #0089be;
+    color: #fff;
+    text-decoration: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 4px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+ul li {
+    color: #fff;
+}
+
+ul {
+    color: #fff;
+}
+
+/* Dropdown Menu */
+.dropbtn {
+    background-color: #0089be;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #9198e5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #0089be;
+  }
+
