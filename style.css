@@ -47,10 +47,18 @@ header nav a {
     color: #FFF;
     margin-left: 15px;
     font-size: 19px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    -webkit-transition: font-size .5s ease;
+    -moz-transition: font-size .5s ease;
+    -o-transition: font-size .5s ease;
+    transition: font-size .5s ease;
 }
 
-header nav a:hover {
-    color: #0089be;
+header nav a:hover{
+    color: #9198e5;
+    text-decoration: overline;
+    font-size: 21px;
 }
 
 .fixed-header {
@@ -68,14 +76,14 @@ header nav a:hover {
     border-radius: 50%;
   }
 
-.sombra {
+/*.sombra {
     border-color: #2b547e;
     border-width: 5px;
     border-style: solid;
     background-color: #2b547e;
     border-radius: 5%;
     box-shadow: -3px 2px 30px 2px black;
-}
+}*/
 
 /* body */
 
@@ -87,6 +95,10 @@ h2, h1 {
 
 h1 {
     box-shadow: -3px 2px 30px 2px black;
+}
+
+h1:hover {
+  cursor: default;
 }
 
 h3, ul {
@@ -383,6 +395,7 @@ ul {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    cursor: pointer;
   }
   
   /* Change color of dropdown links on hover */
@@ -397,4 +410,3 @@ ul {
   .dropdown:hover .dropbtn {
     background-color: #0089be;
   }
-

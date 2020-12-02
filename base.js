@@ -69,7 +69,7 @@ function buscador(x) {
   }
   else if (x == 3) {
     if (confirm("Confirmar")) {
-      txt = "<img src='https://www.tersuave.com.ar/thumb?src=..%2Fassets%2Fmedia%2Fproducts%2Foriginal%2F10312-1554835489.png&w=246&h=189&bg=FFFFFF&far=1' alt='Interior Madera'> <h3>Interior Madera</h3>";
+      txt = "<img src='https://i.ytimg.com/vi/upNGkB-KMic/hqdefault.jpg' alt='Interior Madera'> <h3>Interior Madera</h3>";
     } else {
       txt = "";
     }
